@@ -1,0 +1,111 @@
+body{
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg stroke='%23CCC' stroke-width='0' %3E%3Crect fill='%23F5F5F5' x='-60' y='-60' width='110' height='240'/%3E%3C/g%3E%3C/svg%3E");
+    margin: 0px;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Fredoka One', cursive;
+}
+
+p, li{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.site-grid{
+    display: grid;
+    grid-template-columns: .5fr 1fr .5fr;
+    grid-template-areas: 
+        "header header header"
+        ". body .";
+}
+
+.site-banner {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: .5fr 1fr .5fr;
+    grid-template-areas: 
+        "title title title"
+        "nav nav nav";
+    background-color: #1d96b8;
+    margin: 0;
+}
+
+.site-title {
+   grid-area: title; 
+   padding-top: 1.5em;
+   justify-self: center;
+   }
+.site-title  h1{
+    text-align: center;
+    color: white;
+ }
+
+#psuedo-navbar {
+    grid-area: nav;
+    justify-self: center;
+}
+
+#psuedo-navbar ul {
+    list-style-type: none;
+}
+
+#psuedo-navbar li {
+    display: inline;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: white;
+}
+
+.site-body {
+    grid-area: body;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 1.5em;
+    grid-template-areas: 
+        "intro intro intro intro intro intro"
+        "dom dom xwing xwing camel camel"
+        ". scythe scythe exit exit .";
+    
+}
+
+.site-intro{
+    grid-area: intro;
+}
+
+.dominion-box {
+    grid-area: dom;
+    text-align: center;
+    background-color: white;
+    border-radius: 2em;
+    border: 1px grey solid;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-bottom: 1.5em;
+    font-size: 13px;
+}
+
+.psuedo-button {
+    background-color: #1d96b8;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.psuedo-button a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.psuedo-button:hover{
+    background-color: rgb(223, 136, 65);
+}
+
+.psuedo-button a:hover {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    
+}
