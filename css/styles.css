@@ -74,20 +74,16 @@ p, li{
     grid-area: intro;
 }
 
-.dominion-box {
+.dominion {
     grid-area: dom;
-    text-align: center;
-    background-color: white;
-    border-radius: 2em;
-    border: 1px grey solid;
-    padding-right: 1em;
-    padding-left: 1em;
-    padding-bottom: 1.5em;
-    font-size: 13px;
 }
 
-.xwing-box {
-    grid-area: xwing;
+.xwing {
+    grid-area: xwing; 
+}
+
+
+.box {
     text-align: center;
     background-color: white;
     border-radius: 2em;
@@ -95,7 +91,7 @@ p, li{
     padding-right: 1em;
     padding-left: 1em;
     padding-bottom: 1.5em;
-    font-size: 13px;  
+    font-size: 13px; 
 }
 
 .psuedo-button {
