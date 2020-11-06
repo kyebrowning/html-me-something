@@ -82,6 +82,18 @@ p, li{
     grid-area: xwing; 
 }
 
+.camel {
+    grid-area: camel;
+}
+
+.scythe {
+    grid-area: scythe;
+}
+
+.exit {
+    grid-area: exit;
+}
+
 
 .box {
     text-align: center;
